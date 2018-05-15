@@ -1,0 +1,128 @@
+body{
+  font-family: $main-font-family;
+  font-size: $main-font-size;
+  color: #fff;
+}
+
+
+
+h1,h2,h3,h4,h5,h6{
+  font-family: $main-font-family;
+  color: $default-headline-color;
+}
+h1{
+  font-size: $heading-1;
+  letter-spacing: $letter-spacing-1;
+  font-weight: $heading-1-weight;
+}
+h2{
+  font-size: $heading-2;
+  letter-spacing: $letter-spacing-2;
+  font-weight: $heading-2-weight;
+}
+h3{
+  font-size: $heading-3;
+  letter-spacing: $letter-spacing-3;
+  font-weight: $heading-3-weight;
+}
+h4{
+  font-size: $heading-4;
+  letter-spacing: $letter-spacing-4;
+  font-weight: $heading-4-weight;
+}
+h5{
+  font-size: $heading-5;
+  letter-spacing: $letter-spacing-5;
+  font-weight: $heading-5-weight;
+}
+h6{
+  font-size: $heading-6;
+  letter-spacing: $letter-spacing-6;
+  font-weight: $heading-6-weight;
+}
+
+p{
+  color: $default-para-color;
+  font-size: $para-normal-size;
+  font-weight: $para-normal-weight;
+  letter-spacing: $para-normal-spacing;
+}
+
+button{
+  font-family: $main-font-family;
+}
+
+
+.social-icon{
+  list-style: none;
+  li{
+    display: inline-block;
+    &:not(:last-child){
+      margin-right: 20px;
+    }
+    a{
+      font-size: 22px;
+      text-align: center;
+      i{
+        color: rgba(255,255,255,0.5);
+      }
+      &:hover{
+        i{
+          &.fa-twitter{
+            color: $twitter;
+          }
+          &.fa-facebook,
+          &.fa-facebook-f{
+            color: $facebook;
+          }
+          &.fa-linkedin{
+            color: $linkedin;
+          }
+          &.fa-youtube-play{
+            color: $youtube;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* Icon Go Down */
+@-webkit-keyframes anim-sink-away {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(1em);
+    transform: translateY(1em);
+  }
+}
+@keyframes anim-sink-away {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(1em);
+    transform: translateY(1em);
+  }
+}
+
+.hover-sink-away{
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.hover-sink-away:hover,
+.hover-sink-away:focus,
+.hover-sink-away:active {
+  -webkit-animation-name: anim-sink-away;
+  animation-name: anim-sink-away;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+

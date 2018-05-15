@@ -1,0 +1,44 @@
+
+//------------------------------- Mixins
+@mixin transition($prop1,$prop2:false,$prop3:false,$prop4:false) {
+  -webkit-transition: $prop1, $prop2, $prop3, $prop4;
+  -moz-transition: $prop1, $prop2, $prop3, $prop4;
+  -ms-transition: $prop1, $prop2, $prop3, $prop4;
+  -o-transition: $prop1, $prop2, $prop3, $prop4;
+  transition: $prop1, $prop2, $prop3, $prop4;
+}
+
+@mixin linear-gradient($color-1,$color-2) {
+  background:  -webkit-linear-gradient($color-1,$color-2);
+  background:     -moz-linear-gradient($color-1,$color-2);
+  background:      -ms-linear-gradient($color-1,$color-2);
+  background:       -o-linear-gradient($color-1,$color-2);
+  background:          linear-gradient($color-1,$color-2);
+}
+@mixin box-sizing($mode) {
+  -webkit-box-sizing: $mode;
+  -moz-box-sizing: $mode;
+  box-sizing: $mode;
+}
+@mixin absolute-center($left:auto, $top:auto) {
+  position: absolute;
+  left: $left;
+  top: $top;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}

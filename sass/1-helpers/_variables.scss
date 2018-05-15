@@ -1,0 +1,90 @@
+
+//------------------------------- Variables
+$main-font-family: "nudista-web", sans-serif;
+$main-font-size: 14px;
+
+$nudista-medium: 400;
+$nudista-semibold: 600;
+$nudista-bold: 700;
+
+$brand-blue-clr: #3498db;
+
+$images-path: '../images';
+$icons-path: $images-path + '/icons';
+
+//------------------------------- Colors
+
+$default-headline-color: #45494c;
+$default-para-color: #7a7a7a;
+$default-blue-color: #1b75d6;
+
+$default-blue-color-light: #268AD6;
+
+$facebook: #3b5998;
+$twitter: #1da1f2;
+$linkedin: #0077b5;
+$youtube: #cd201f;
+
+$footer-bg-color: #001f40;
+
+//------------------------------- Font style
+$heading-1: 96px;
+$heading-2: 72px;
+$heading-3: 48px;
+$heading-4: 38px;
+$heading-5: 30px;
+$heading-6: 28px;
+
+$heading-1-weight: $nudista-bold;
+$heading-2-weight: $nudista-bold;
+$heading-3-weight: $nudista-semibold;
+$heading-4-weight: $nudista-semibold;;
+$heading-5-weight: $nudista-bold;;
+$heading-6-weight: $nudista-semibold;;
+
+$letter-spacing-1: -1px;
+$letter-spacing-2: -0.5px;
+$letter-spacing-3: -0.5px;
+$letter-spacing-4: -0.3px;
+$letter-spacing-5: -0.3px;
+$letter-spacing-6: -0.3px;
+
+$med-title-size: 20px;
+$med-title-weight: 700;
+$med-title-spacing: 0.15em;
+
+$small-title-size: 15px;
+$small-title-weight: 700;
+$small-title-spacing: 1.5px;
+
+$para-normal-size: 18px;
+$para-normal-weight: 400;
+$para-normal-spacing: 0.01em;
+
+$para-large-size: 22px;
+$para-large-weight: 400;
+$para-large-spacing: 0.1px;
+
+$para-small-size: 13px;
+$para-small-weight: 600;
+$para-small-spacing: 0.4px;
+
+//------------------------------- Font style -- below 992px
+$res-heading-1: 48px;
+$res-heading-2: 48px;
+$res-heading-3: 30px;
+$res-heading-4: 28px;
+$res-heading-5: 24px;
+$res-heading-6: 20px;
+
+$res-letter-spacing-5: 0;
+
+$res-med-title-size: 15px;
+
+$res-para-normal-size: 16px;
+$res-para-normal-spacing: 0.3px;
+
+$res-para-large-size: 18px;
+$res-para-large-spacing: 0.2px;
+
+
