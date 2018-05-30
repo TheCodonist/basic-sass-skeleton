@@ -20,6 +20,12 @@
   -moz-box-sizing: $mode;
   box-sizing: $mode;
 }
+
+@mixin box-shadow($prop) {
+  -webkit-box-shadow: $prop;
+  -moz-box-shadow: $prop;
+  box-shadow: $prop;
+}
 @mixin absolute-center($left:auto, $top:auto) {
   position: absolute;
   left: $left;

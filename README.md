@@ -14,7 +14,7 @@ Framework and Plugins included are:
 Just clone this repository by using the Command given below.
 
 ```git
-git clone
+git clone https://github.com/hamayunaziz/basic-sass-skeleton.git . && rm -rf ./.git
 ```
  
 ## Contributors
