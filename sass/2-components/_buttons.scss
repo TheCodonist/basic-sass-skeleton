@@ -1,48 +1,7 @@
 .btn{
-  border-radius: 0;
-  text-transform: uppercase;
-  cursor: pointer;
 
   &:hover,
   &:focus{
     outline: none;
   }
-}
-.default-btn{
-  background-color: $default-blue-color;
-  color: #fff;
-  &:hover,
-  &:focus{
-    background-color: $default-blue-color-light;
-    color: #fff;
-  }
-}
-
-.outline-btn{
-  border: 2px solid rgba(122,122,122,0.33);
-  background-color: transparent;
-  color: $default-para-color;
-  font-size: $small-title-size;
-  font-weight: $small-title-weight;
-  letter-spacing: $small-title-spacing;
-
-  &.white-btn{
-    color: #fff;
-    border: 2px solid rgba(255,255,255,0.33);
-  }
-
-  &:hover{
-    border: 2px solid rgba(122,122,122,1);
-
-    &.white-btn{
-      border: 2px solid rgba(255,255,255,1);
-    }
-  }
-}
-
-.read-more-btn{
-  background-color: rgba(255,255,255,0.8);
-  font-size: 16px;
-  font-weight: 700;
-  color: $default-headline-color;
 }
