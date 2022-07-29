@@ -37,3 +37,37 @@
     background: none !important;
   }
 }
+
+.social-icon{
+  list-style: none;
+  li{
+    display: inline-block;
+    &:not(:last-child){
+      margin-right: 20px;
+    }
+    a{
+      font-size: 22px;
+      text-align: center;
+      i{
+        color: rgba(255,255,255,0.5);
+      }
+      &:hover{
+        i{
+          &.fa-twitter{
+            color: $twitter;
+          }
+          &.fa-facebook,
+          &.fa-facebook-f{
+            color: $facebook;
+          }
+          &.fa-linkedin{
+            color: $linkedin;
+          }
+          &.fa-youtube-play{
+            color: $youtube;
+          }
+        }
+      }
+    }
+  }
+}

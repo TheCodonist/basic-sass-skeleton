@@ -1,52 +1,52 @@
-/* -------------------------------------------------------------
-  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
-  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+// -------------------------------------------------------------
+//   Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+//   By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
 
-  List of CSS3 Sass Mixins File to be @imported and @included as you need
+//   List of CSS3 Sass Mixins File to be @imported and @included as you need
 
-  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
-  ENDING css files
+//   The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+//   ENDING css files
 
-  note: All CSS3 Properties are being supported by Safari 5
-  more info: http://www.findmebyip.com/litmus/#css3-properties
+//   note: All CSS3 Properties are being supported by Safari 5
+//   more info: http://www.findmebyip.com/litmus/#css3-properties
 
-  Mixins available:
-    -   css3-prefix             - arguments: Property, Value
-    -   background-gradient     - arguments: Start Color: #3C3C3C, End Color: #999999
-    -   background-radial       - arguments: Start Color: #FFFFFF, Start position: 0%, End Color: #000000, End position: 100%
-    -   background-size         - arguments: Width: 100%, Height: 100%
-    -   background-opacity      - arguments: Color: #000, Opacity: .85
-    -   border-radius           - arguments: Radius: 5px
-    -   border-radius-separate  - arguments: Top Left: 5px, Top Left: 5px, Bottom Left: 5px, Bottom Right: 5px
-    -   box                     - arguments: Orientation: horizontal, Pack: center, Align: center
-    -   box-rgba                - arguments: R: 60, G: 3, B: 12, Opacity: 0.23, Color: #3C3C3C
-    -   box-shadow              - arguments: X: 2px, Y: 2px, Blur: 5px, Color: rgba(0,0,0,.4)
-    -   box-sizing              - arguments: Type: border-box
-    -   columns                 - arguments: Count: 3, Gap: 10
-    -   double-borders          - arguments: Color One: #3C3C3C, Color Two: #999999, Radius: 0
-    -   flex                    - arguments: Value: 1
-    -   flip                    - arguments: ScaleX: -1
-    -   font-face               - arguments: Font Family: myFont, Eot File Src: myFont.eot, Woff File Src: myFont.woff, Ttf File Src: myFont.ttf
-    -   opacity                 - arguments: Opacity: 0.5
-    -   outline radius          - arguments: Radius: 5px
-    -   resize                  - arguments: Direction: both
-    -   rotate                  - arguments: Degree: 0, M11: 0, M12: 0, M21: 0, M22: 0
-    CSS Matrix Rotation Calculator http://www.boogdesign.com/examples/transforms/matrix-calculator.html
-    -   text-shadow             - arguments: X: 2px, Y: 2px, Blur: 5px, Color: rgba(0,0,0,.4)
-    -   transform               - arguments: Parameters: null
-    -   transform-style         - arguments: Style: preserve-3d
-    -   transition              - Default arguments: What: all, Length: 1s, Easing: ease-in-out
-    -                            - Examples: @include transition (all 2s ease-in-out);
-    -                                        @include transition (opacity 1s ease-in 2s, width 2s ease-out);
-    -   triple-borders          - arguments: Color One: #3C3C3C, Color Two: #999999, Color Three: #000000, Radius: 0
-    -   keyframes               - arguments: Animation name
-                                - content:   Animation css
-    -   animation               - arguments: name duration timing-function delay iteration-count direction fill-mode play-state
-                                             (http://www.w3schools.com/cssref/css3_pr_animation.asp)
+//   Mixins available:
+//     -   css3-prefix             - arguments: Property, Value
+//     -   background-gradient     - arguments: Start Color: #3C3C3C, End Color: #999999
+//     -   background-radial       - arguments: Start Color: #FFFFFF, Start position: 0%, End Color: #000000, End position: 100%
+//     -   background-size         - arguments: Width: 100%, Height: 100%
+//     -   background-opacity      - arguments: Color: #000, Opacity: .85
+//     -   border-radius           - arguments: Radius: 5px
+//     -   border-radius-separate  - arguments: Top Left: 5px, Top Left: 5px, Bottom Left: 5px, Bottom Right: 5px
+//     -   box                     - arguments: Orientation: horizontal, Pack: center, Align: center
+//     -   box-rgba                - arguments: R: 60, G: 3, B: 12, Opacity: 0.23, Color: #3C3C3C
+//     -   box-shadow              - arguments: X: 2px, Y: 2px, Blur: 5px, Color: rgba(0,0,0,.4)
+//     -   box-sizing              - arguments: Type: border-box
+//     -   columns                 - arguments: Count: 3, Gap: 10
+//     -   double-borders          - arguments: Color One: #3C3C3C, Color Two: #999999, Radius: 0
+//     -   flex                    - arguments: Value: 1
+//     -   flip                    - arguments: ScaleX: -1
+//     -   font-face               - arguments: Font Family: myFont, Eot File Src: myFont.eot, Woff File Src: myFont.woff, Ttf File Src: myFont.ttf
+//     -   opacity                 - arguments: Opacity: 0.5
+//     -   outline radius          - arguments: Radius: 5px
+//     -   resize                  - arguments: Direction: both
+//     -   rotate                  - arguments: Degree: 0, M11: 0, M12: 0, M21: 0, M22: 0
+//     CSS Matrix Rotation Calculator http://www.boogdesign.com/examples/transforms/matrix-calculator.html
+//     -   text-shadow             - arguments: X: 2px, Y: 2px, Blur: 5px, Color: rgba(0,0,0,.4)
+//     -   transform               - arguments: Parameters: null
+//     -   transform-style         - arguments: Style: preserve-3d
+//     -   transition              - Default arguments: What: all, Length: 1s, Easing: ease-in-out
+//     -                            - Examples: @include transition (all 2s ease-in-out);
+//     -                                        @include transition (opacity 1s ease-in 2s, width 2s ease-out);
+//     -   triple-borders          - arguments: Color One: #3C3C3C, Color Two: #999999, Color Three: #000000, Radius: 0
+//     -   keyframes               - arguments: Animation name
+//                                 - content:   Animation css
+//     -   animation               - arguments: name duration timing-function delay iteration-count direction fill-mode play-state
+//                                              (http://www.w3schools.com/cssref/css3_pr_animation.asp)
 
-------------------------------------------------------------- */
+// -------------------------------------------------------------
 
-/* ADDS A BROWSER PREFIX TO THE PROPERTY */
+//ADDS A BROWSER PREFIX TO THE PROPERTY
 @mixin css3-prefix($property, $value) {
   -webkit-#{$property}: #{$value};
    -khtml-#{$property}: #{$value};
@@ -56,7 +56,7 @@
           #{$property}: #{$value};
 }
 
-/* BACKGROUND GRADIENT */
+// BACKGROUND GRADIENT
 @mixin background-gradient($startColor: #3C3C3C, $endColor: #999999) {
     background-color: $startColor;
     background-image: -webkit-gradient(linear, left top, left bottom, from($startColor), to($endColor));
@@ -68,7 +68,7 @@
     filter:            progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$startColor}', endColorStr='#{$endColor}');
 }
 
-/* BACKGROUND RADIAL */
+// BACKGROUND RADIAL
 @mixin background-radial($startColor: #FFFFFF, $startPos: 0%, $endColor: #000000, $endPos:100%) {
     background: -moz-radial-gradient(center, ellipse cover, $startColor $startPos, $endColor $endPos);
     background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop($startPos,$startColor), color-stop($endPos,$endColor));
@@ -79,7 +79,7 @@
     filter:     progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$startColor}', endColorstr='#{$endColor}',GradientType=1 );
 }
 
-/* BACKGROUND SIZE */
+// BACKGROUND SIZE
 @mixin background-size($width: 100%, $height: $width) {
   @if type-of($width) == 'number' and $height != null {
     @include css3-prefix('background-size', $width $height);
@@ -88,13 +88,13 @@
   }
 }
 
-/* BACKGROUND COLOR OPACITY */
+// BACKGROUND COLOR OPACITY
 @mixin background-opacity($color: #000, $opacity: 0.85) {
   background: $color;
   background: rgba($color, $opacity);
 }
 
-/* BORDER RADIUS */
+// BORDER RADIUS
 @mixin border-radius($radius: 5px) {
     @include css3-prefix('border-radius', $radius);
 }
@@ -116,7 +116,7 @@
   border-bottom-left-radius:  $bottomLeftRadius;
 }
 
-/* BOX */
+// BOX
 @mixin box($orient: horizontal, $pack: center, $align: center) {
   display: -webkit-box;
   display: -moz-box;
@@ -127,7 +127,7 @@
   @include css3-prefix('box-align', $align);
 }
 
-/* BOX RGBA */
+// BOX RGBA
 @mixin box-rgba($r: 60, $g: 3, $b: 12, $opacity: 0.23, $color: #3C3C3C) {
   background-color: transparent;
   background-color: rgba($r, $g, $b, $opacity);
@@ -136,7 +136,7 @@
 }
 
 
-/* BOX SHADOW */
+// BOX SHADOW
 @mixin box-shadow($x: 2px, $y: 2px, $blur: 5px, $color: rgba(0,0,0,.4), $inset: "") {
   @if ($inset != "") {
     @include css3-prefix('box-shadow', $inset $x $y $blur $color);
@@ -145,18 +145,18 @@
   }
 }
 
-/* BOX SIZING */
+// BOX SIZING
 @mixin box-sizing($type: border-box) {
   @include css3-prefix('box-sizing', $type);
 }
 
-/* COLUMNS */
+// COLUMNS
 @mixin columns($count: 3, $gap: 10) {
   @include css3-prefix('column-count', $count);
   @include css3-prefix('column-gap', $gap);
 }
 
-/* DOUBLE BORDERS */
+// DOUBLE BORDERS
 @mixin double-borders($colorOne: #3C3C3C, $colorTwo: #999999, $radius: 0) {
   border: 1px solid $colorOne;
 
@@ -165,19 +165,19 @@
   @include border-radius( $radius );
 }
 
-/* FLEX */
+// FLEX
 @mixin flex($value: 1) {
   @include css3-prefix('box-flex', $value);
 }
 
-/* FLIP */
+// FLIP
 @mixin flip($scaleX: -1) {
   @include css3-prefix('transform', scaleX($scaleX));
   filter:            FlipH;
   -ms-filter:        "FlipH";
 }
 
-/* FONT FACE */
+// FONT FACE
 @mixin font-face($fontFamily: myFont, $eotFileSrc: 'myFont.eot', $woffFileSrc: 'myFont.woff', $ttfFileSrc: 'myFont.ttf') {
   font-family: $fontFamily;
   src: url($eotFileSrc)  format('eot'),
@@ -185,7 +185,7 @@
        url($ttfFileSrc)  format('truetype');
 }
 
-/* OPACITY */
+// OPACITY
 @mixin opacity($opacity: 0.5) {
     $opacityMultiplied: ($opacity * 100);
     
@@ -195,17 +195,17 @@
 }
 
 
-/* OUTLINE RADIUS */
+// OUTLINE RADIUS
 @mixin outline-radius($radius: 5px) {
   @include css3-prefix('outline-radius', $radius);
 }
 
-/* RESIZE */
+// RESIZE
 @mixin resize($direction: both) {
   @include css3-prefix('resize', $direction);
 }
 
-/* ROTATE*/
+// ROTATE
 @mixin rotate($deg: 0, $m11: 0, $m12: 0, $m21: 0, $m22: 0) {
   @include css3-prefix('transform', rotate($deg + deg));
   filter: progid:DXImageTransform.Microsoft.Matrix(
@@ -213,22 +213,22 @@
     zoom: 1;
 }
 
-/* TEXT SHADOW */
+// TEXT SHADOW
 @mixin text-shadow($x: 2px, $y: 2px, $blur: 5px, $color: rgba(0,0,0,.4)) {
     text-shadow: $x $y $blur $color;
 }
 
-/* TRANSFORM  */
+// TRANSFORM
 @mixin transform($params) {
   @include css3-prefix('transform', $params);
 }
 
-/* TRANSFORM STYLE */
+// TRANSFORM STYLE
 @mixin transform-style($style: preserve-3d) {
   @include css3-prefix('transform-style', $style);
 }
 
-/* TRANSITION */
+// TRANSITION
 @mixin transition($properties...) {
   
   @if length($properties) >= 1 {
@@ -240,7 +240,7 @@
   }
 }
 
-/* TRIPLE BORDERS */
+// TRIPLE BORDERS
 @mixin triple-borders($colorOne: #3C3C3C, $colorTwo: #999999, $colorThree: #000000, $radius: 0) {
     border: 1px solid $colorOne;
 
@@ -249,7 +249,7 @@
     @include css3-prefix('box-shadow', 0 0 0 1px $colorTwo, 0 0 0 2px $colorThree);
 }
 
-/* KEYFRAMES */
+// KEYFRAMES
 @mixin keyframes($animation-name) {
   @-webkit-keyframes #{$animation-name} {
     @content;
@@ -268,7 +268,7 @@
   }
 }
 
-/* ANIMATION */
+// ANIMATION
 @mixin animation($str) {
   @include css3-prefix('animation', $str);
 }

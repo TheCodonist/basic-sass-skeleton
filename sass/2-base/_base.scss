@@ -1,0 +1,25 @@
+
+/*--------------*\
+    Base
+\*--------------*/
+
+body{
+  font-family: $main-font-family;
+}
+
+.hover-sink-away{
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.hover-sink-away:hover,
+.hover-sink-away:focus,
+.hover-sink-away:active {
+  -webkit-animation-name: anim-sink-away;
+  animation-name: anim-sink-away;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+

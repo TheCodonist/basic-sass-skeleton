@@ -1,7 +1,9 @@
-@import "0-plugins/all";
-@import "1-helpers/all";
-@import "2-components/all";
-@import "3-layouts/all";
-@import "4-pages/all";
-@import "5-sections/all";
+
+@import "0-plugins";
+@import "1-abstracts";
+@import "2-base";
+@import "3-components";
+@import "4-layouts";
+@import "5-sections";
+@import "6-pages";
 @import "shamefuloverrides";
