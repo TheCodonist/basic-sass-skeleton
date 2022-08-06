@@ -1,25 +1,29 @@
 //------------------------------- Variables
-$main-font-family: "nudista-web",sans-serif;
+$main-font-family: "nudista-web", sans-serif;
 $main-font-size: 14px;
 
 $nudista-medium: 400;
 $nudista-semibold: 600;
 $nudista-bold: 700;
 
-$images-path: '../images';
-$icons-path: $images-path+'/icons';
+$images-path: "../images";
+$icons-path: $images-path + "/icons";
 
 //------------------------------- Colors
 
+$social-colors: (
+  "facebook": #3b5998,
+  "facebook-f": #3b5998,
+  "twitter": #1da1f2,
+  "linkedin": #0077b5,
+  youtube-play: #cd201f,
+);
 
-$facebook: #3b5998;
-$twitter: #1da1f2;
-$linkedin: #0077b5;
-$youtube: #cd201f;
+$brand-colors: (
+  grey-light: #fafafa,
+);
 
-$grey-light : #fafafa;
-
-
+// $grey-light: #fafafa;
 
 // ------------------------ Responsive Quries
 

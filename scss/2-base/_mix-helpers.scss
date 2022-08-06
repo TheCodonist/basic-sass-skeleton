@@ -1,12 +1,12 @@
+@use "sass:map";
 /*--------------*\
     Mix-Helpers
 \*--------------*/
 
-
 .box-glow {
-  -webkit-box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
-  -moz-box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
-  box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
 }
 
 // page seperator
@@ -19,8 +19,9 @@
     width: 100%;
     content: "";
     display: inline-block;
-    border-bottom: 1px solid $grey-light;
+    border-bottom: 1px solid map.get($brand-colors, grey-light);
   }
+
   &:before {
     margin-right: 20px;
   }
@@ -31,45 +32,37 @@
 .row-7 {
   margin-left: -7px;
   margin-right: -7px;
-  > div[class^='col-'] {
+  > div[class^="col-"] {
     padding-left: 7px;
     padding-right: 7px;
   }
 }
 
-.mobile-no-bg{
-  @include grid-sm-down{
+.mobile-no-bg {
+  @include grid-sm-down {
     background: none !important;
   }
 }
 
-.social-icon{
+.social-list {
   list-style: none;
-  li{
+  li {
     display: inline-block;
-    &:not(:last-child){
+    &:not(:last-child) {
       margin-right: 20px;
     }
-    a{
+    a {
       font-size: 22px;
       text-align: center;
-      i{
-        color: rgba(255,255,255,0.5);
+      i {
+        color: rgba(255, 255, 255, 0.5);
       }
-      &:hover{
-        i{
-          &.fa-twitter{
-            color: $twitter;
-          }
-          &.fa-facebook,
-          &.fa-facebook-f{
-            color: $facebook;
-          }
-          &.fa-linkedin{
-            color: $linkedin;
-          }
-          &.fa-youtube-play{
-            color: $youtube;
+      &:hover {
+        i {
+          @each $name, $color in $social-colors {
+            &.fa-#{$name} {
+              color: $color;
+            }
           }
         }
       }
